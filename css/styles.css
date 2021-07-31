@@ -2,28 +2,27 @@ h1,
 h2,
 h3 {
   font-family: "Open Sans", sans-serif;
-  color: white;
+  color: black;
   text-align: center;
 }
-/* how do i keep the background box opaque, but not the text? */
 div.transbox {
-  margin: 0px;
-  background-color: black;
-  opacity: 0.6;
+  height: 150px;
+  background-color: rgba(100, 100, 100, 0.5);
+  align-items: center;
 }
 div.transbox h1 {
-  margin: 10%;
   font-weight: bold;
   color: white;
-  opacity: 1;
+  text-shadow: 2px 2px 10px black;
 }
 .jumbotron {
-  background: url(/img/yousef-espanioly-L6g30JaQ5Tc-unsplash.jpg) no-repeat center center;
+  background: url(/img/yousef-espanioly-L6g30JaQ5Tc-unsplash.jpg) no-repeat
+    center center;
   background-size: cover;
-  min-height: 300px;
+  min-height: 250px;
   margin: 0;
 }
 .navbar {
-    background-color: #114e72; 
-    opacity: .8;
-  }
+  background-color: #114e72;
+  opacity: 0.8;
+}
