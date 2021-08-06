@@ -1,28 +1,136 @@
 h1,
-h2,
-h3 {
+h2 {
   font-family: "Open Sans", sans-serif;
   color: black;
   text-align: center;
+  font-size: 4rem;
 }
+h3{
+  font-family: "Open Sans", sans-serif;
+  color: black; 
+  font-size: 4rem;
+  text-shadow: 2px 2px 10px #114e723f;
+}
+p {
+  font-size: 2rem;
+  margin-top: 10px;
+}
+
+.vertical-align {
+  display: flex;
+  align-items: center;
+}
+
 div.transbox {
   height: 150px;
   background-color: rgba(100, 100, 100, 0.5);
   align-items: center;
 }
-div.transbox h1 {
+div.transbox h2 {
   font-weight: bold;
   color: white;
   text-shadow: 2px 2px 10px black;
+  font-size: 4rem;
 }
+
 .jumbotron {
   background: url(/img/yousef-espanioly-L6g30JaQ5Tc-unsplash.jpg) no-repeat
     center center;
   background-size: cover;
   min-height: 250px;
-  margin: 0;
+  margin-bottom: 0px;
 }
+
 .navbar {
   background-color: #114e72;
   opacity: 0.8;
+}
+
+.imageContainer {
+  position: relative;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+  padding: 5px;
+  margin-bottom: 5%;
+  box-shadow: 0px 3px 15px #114e724d;
+}
+
+.imageMiddle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.imageContainer:hover .image {
+  opacity: 0.3;
+}
+
+.imageContainer:hover .imageMiddle {
+  opacity: 1;
+}
+
+.imageText {
+  background-color: #114e72;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 65%;
+}
+
+.modal-header {
+  background-color: #114e72;
+  color: white;
+  text-shadow: 2px 2px 10px black;
+  font-size: 4rem;
+}
+
+.modal-title {
+  margin: 0;
+}
+
+.modal-body {
+  padding: 16px;
+}
+#site-footer {
+  background-color:#9dc5db;
+}
+
+span {
+  vertical-align: middle;
+  margin-right: 3px;
+  margin-top: 0;
 }
